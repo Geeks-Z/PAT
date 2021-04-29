@@ -2,60 +2,32 @@
  * @Descripttion: 
  * @version: 1.0
  * @Author: Geeks_Z
- * @Date: 2021-04-28 08:20:49
+ * @Date: 2021-04-29 08:56:30
  * @LastEditors: Geeks_Z
- * @LastEditTime: 2021-04-28 09:20:44
+ * @LastEditTime: 2021-04-29 08:56:32
  */
 #include <stdio.h>
-#include <iostream>
-using namespace std;
-int maxNum = 1;
-void print(int n, char c)
-{
-  //控制字符前空格输出
-  for (int i = (maxNum - n) / 2; i > 0; i--)
-  {
-    cout << ' ';
-  }
-
-  for (int i = 0; i < n; i++)
-  {
-    cout << c;
-  }
-  cout << endl;
-}
 
 int main()
 {
-  freopen("input.txt", "r", stdin);
-  int n;
-  char c;
-  scanf("%d %c", &n, &c);
-
-  if (n < 7)
+  //两个时钟打点数
+  long long c1, c2;
+  scanf("%lld%lld", &c1, &c2);
+  long long time = c2 - c1;
+  //四舍五入操作
+  if (time % 100 >= 50)
   {
-    cout << c << endl;
-    cout << n - maxNum;
+    time = time / 100 + 1;
   }
   else
   {
-    n = n - 1;
-
-    while ((maxNum + 2) * 2 <= n)
-    {
-      maxNum += 2;
-      n = n - 2 * maxNum;
-    }
-    for (int i = maxNum; i >= 0; i -= 2)
-    {
-      print(i, c);
-    }
-    for (int i = 3; i <= maxNum; i += 2)
-    {
-      print(i, c);
-    }
-    cout << n;
+    time = time / 100;
   }
-
+  //运行时间的时分秒
+  int hh, mm, ss;
+  hh = time / (60 * 60);
+  mm = (time % (60 * 60)) / 60;
+  ss = time % 60;
+  printf("%02d:%02d:%02d\n", hh, mm, ss);
   return 0;
 }

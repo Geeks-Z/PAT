@@ -2,45 +2,60 @@
  * @Descripttion: 
  * @version: 1.0
  * @Author: Geeks_Z
- * @Date: 2021-04-28 11:05:02
+ * @Date: 2021-04-28 08:20:49
  * @LastEditors: Geeks_Z
- * @LastEditTime: 2021-04-28 11:24:35
+ * @LastEditTime: 2021-04-28 09:20:44
  */
 #include <stdio.h>
 #include <iostream>
-#include <string>
 using namespace std;
-const int maxn = 10010;
+int maxNum = 1;
+void print(int n, char c)
+{
+  //控制字符前空格输出
+  for (int i = (maxNum - n) / 2; i > 0; i--)
+  {
+    cout << ' ';
+  }
+
+  for (int i = 0; i < n; i++)
+  {
+    cout << c;
+  }
+  cout << endl;
+}
 
 int main()
 {
-  int n, cnt = 0;
-  cin >> n;
-  //处理输入
-  // char name[maxn];
-  // int year, month, day;
-  // scanf("%s %d/%d/%d",&name,&year,&month,&day);
-  string name, birth, maxname, minname, maxbirth = "1814/09/06", minbirth = "2014/09/06";
-  for (int i = 0; i < n; i++)
+  freopen("input.txt", "r", stdin);
+  int n;
+  char c;
+  scanf("%d %c", &n, &c);
+
+  if (n < 7)
   {
-    cin >> name >> birth;
-    if (birth >= "1814/09/06" && birth <= "2014/09/06")
-    {
-      cnt++;
-      if (birth >= maxbirth)
-      {
-        maxbirth = birth;
-        maxname = name;
-      }
-      if (birth <= minbirth)
-      {
-        minbirth = birth;
-        minname = name;
-      }
-    }
+    cout << c << endl;
+    cout << n - maxNum;
   }
-  cout << cnt;
-  if (cnt != 0)
-    cout << " " << minname << " " << maxname;
+  else
+  {
+    n = n - 1;
+
+    while ((maxNum + 2) * 2 <= n)
+    {
+      maxNum += 2;
+      n = n - 2 * maxNum;
+    }
+    for (int i = maxNum; i >= 0; i -= 2)
+    {
+      print(i, c);
+    }
+    for (int i = 3; i <= maxNum; i += 2)
+    {
+      print(i, c);
+    }
+    cout << n;
+  }
+
   return 0;
 }

@@ -2,46 +2,20 @@
  * @Descripttion: 
  * @version: 1.0
  * @Author: Geeks_Z
- * @Date: 2021-04-28 20:31:42
+ * @Date: 2021-04-28 16:36:11
  * @LastEditors: Geeks_Z
- * @LastEditTime: 2021-04-28 21:01:49
+ * @LastEditTime: 2021-04-28 17:15:56
  */
-#include <cstdio>
 #include <iostream>
-#include <algorithm>
+#include <cctype>
 using namespace std;
-const int maxn = 100010;
-
 int main()
 {
-  freopen("input.txt", "r", stdin);
-  int n, arr[maxn];
-  long long p;
-  scanf("%d%lld", &n, &p);
-  for (int i = 0; i < n; i++)
-  {
-    scanf("%d", &arr[i]);
-  }
-  sort(arr, arr + n);
-  int maxValue = 0, temp = 0;
-  for (int left = 0; left < n; left++)
-  {
-    for (int right = left + temp; right < n; right++)
-    {
-      if (arr[right] <= arr[left] * p)
-      {
-        temp = right - left + 1;
-        if (temp > maxValue)
-        {
-          maxValue = temp;
-        }
-      }
-      else
-      {
-        break;
-      }
-    }
-  }
-  cout << maxValue;
+  string s1, s2, ans;
+  cin >> s1 >> s2;
+  for (int i = 0; i < s1.length(); i++)
+    if (s2.find(s1[i]) == string::npos && ans.find(toupper(s1[i])) == string::npos)
+      ans += toupper(s1[i]);
+  cout << ans;
   return 0;
 }
