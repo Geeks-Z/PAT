@@ -1,16 +1,17 @@
 /*
- * @Descripttion: 
+ * @Descripttion: 素数对猜想
  * @version: 1.0
  * @Author: Geeks_Z
  * @Date: 2021-04-21 10:56:41
  * @LastEditors: Geeks_Z
- * @LastEditTime: 2021-04-21 11:33:52
+ * @LastEditTime: 2021-05-02 09:59:03
  */
 #include <stdio.h>
 #include <iostream>
 using namespace std;
 
 const int maxn = 100010;
+//如果赋值为true 只是将第一个进行了赋值
 bool isPrime[maxn] = {false};
 int prime[maxn];
 //用于移动prime数组
@@ -23,7 +24,7 @@ int index = 0;
  */
 void findPrime()
 {
-
+  //1既不是素数也不是合数
   for (int i = 2; i < maxn; i++)
   {
     if (isPrime[i] == false)

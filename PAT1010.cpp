@@ -1,16 +1,17 @@
 /*
- * @Descripttion: 
+ * @Descripttion: 一元多项式求导
  * @version: 1.0
  * @Author: Geeks_Z
  * @Date: 2021-04-21 16:06:48
  * @LastEditors: Geeks_Z
- * @LastEditTime: 2021-04-21 21:42:45
+ * @LastEditTime: 2021-05-02 10:34:04
  */
 
 #include <iostream>
 using namespace std;
 int main()
 {
+  freopen("input.txt", "r", stdin);
   int index;
   int expo;
   cin >> expo >> index;

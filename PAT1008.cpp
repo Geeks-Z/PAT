@@ -1,28 +1,29 @@
 /*
- * @Descripttion: 
+ * @Descripttion: 数组右移问题
  * @version: 1.0
  * @Author: Geeks_Z
  * @Date: 2021-04-22 11:35:12
  * @LastEditors: Geeks_Z
- * @LastEditTime: 2021-04-22 15:50:35
+ * @LastEditTime: 2021-05-02 10:25:31
  */
 #include <stdio.h>
 #include <algorithm>
 using namespace std;
 
-// void reverse(int arr[], int start, int end)
-// {
-//   for (int i = start; i <= (start + end) / 2; i++)
-//   {
-//     int tmp = arr[i];
-//     arr[i] = arr[start + end - i];
-//     arr[start + end - i] = tmp;
-//   }
-// }
+/* void reverse(int arr[], int start, int end)
+{
+  for (int i = start; i <= (start + end) / 2; i++)
+  {
+    int tmp = arr[i];
+    arr[i] = arr[start + end - i];
+    arr[start + end - i] = tmp;
+  }
+} */
 
 int main()
 {
   freopen("input.txt", "r", stdin);
+  //数组长度 右移位数
   int n, m;
   scanf("%d %d", &n, &m);
   //处理m > n的情况
