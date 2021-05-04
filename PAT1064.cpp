@@ -1,5 +1,5 @@
 /*
- * @Descripttion: 
+ * @Descripttion: 朋友数
  * @version: 1.0
  * @Author: Geeks_Z
  * @Date: 2021-05-03 21:04:44
