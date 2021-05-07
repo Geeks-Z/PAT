@@ -1,10 +1,10 @@
 /*
- * @Descripttion: 
+ * @Descripttion: 反转链表--参考https://www.liuchuo.net/archives/463
  * @version: 1.0
  * @Author: Geeks_Z
  * @Date: 2021-04-27 20:09:17
  * @LastEditors: Geeks_Z
- * @LastEditTime: 2021-04-27 21:12:08
+ * @LastEditTime: 2021-05-07 22:12:37
  */
 #include <iostream>
 #include <algorithm>

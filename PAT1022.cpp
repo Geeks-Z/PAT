@@ -1,5 +1,5 @@
 /*
- * @Descripttion: 
+ * @Descripttion: D进制的A+B
  * @version: 1.0
  * @Author: Geeks_Z
  * @Date: 2021-04-24 15:50:34

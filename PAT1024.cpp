@@ -1,10 +1,10 @@
 /*
- * @Descripttion: 
+ * @Descripttion: 科学计数法
  * @version: 1.0
  * @Author: Geeks_Z
  * @Date: 2021-04-26 21:12:23
  * @LastEditors: Geeks_Z
- * @LastEditTime: 2021-04-26 21:39:45
+ * @LastEditTime: 2021-05-07 20:50:29
  */
 #include <stdio.h>
 #include <string>

@@ -1,5 +1,5 @@
 /*
- * @Descripttion: 
+ * @Descripttion: 程序运行时间
  * @version: 1.0
  * @Author: Geeks_Z
  * @Date: 2021-04-29 08:56:30
