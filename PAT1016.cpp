@@ -1,10 +1,10 @@
 /*
- * @Descripttion: 
+ * @Descripttion: 部分 A + B
  * @version: 1.0
  * @Author: Geeks_Z
  * @Date: 2021-04-23 20:39:04
  * @LastEditors: Geeks_Z
- * @LastEditTime: 2021-04-23 20:39:08
+ * @LastEditTime: 2021-05-07 15:39:53
  */
 
 #include <stdio.h>

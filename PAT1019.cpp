@@ -1,10 +1,10 @@
 /*
- * @Descripttion: 
+ * @Descripttion: 数字黑洞
  * @version: 1.0
  * @Author: Geeks_Z
  * @Date: 2021-04-24 09:25:54
  * @LastEditors: Geeks_Z
- * @LastEditTime: 2021-04-24 09:42:27
+ * @LastEditTime: 2021-05-07 16:02:16
  */
 #include <stdio.h>
 #include <algorithm>

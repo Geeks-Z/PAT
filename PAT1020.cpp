@@ -1,10 +1,10 @@
 /*
- * @Descripttion: 
+ * @Descripttion: 月饼-贪心策略
  * @version: 1.0
  * @Author: Geeks_Z
  * @Date: 2021-04-24 09:46:02
  * @LastEditors: Geeks_Z
- * @LastEditTime: 2021-04-24 10:25:00
+ * @LastEditTime: 2021-05-07 16:03:07
  */
 #include <stdio.h>
 #include <algorithm>

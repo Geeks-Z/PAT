@@ -4,7 +4,7 @@
  * @Author: Geeks_Z
  * @Date: 2021-04-22 11:35:12
  * @LastEditors: Geeks_Z
- * @LastEditTime: 2021-05-02 10:25:31
+ * @LastEditTime: 2021-05-07 15:30:47
  */
 #include <stdio.h>
 #include <algorithm>
@@ -22,7 +22,7 @@ using namespace std;
 
 int main()
 {
-  freopen("input.txt", "r", stdin);
+  // freopen("input.txt", "r", stdin);
   //数组长度 右移位数
   int n, m;
   scanf("%d %d", &n, &m);
@@ -33,15 +33,14 @@ int main()
   {
     scanf("%d", &arr[i]);
   }
-  // //反转前m部分
-  // reverse(arr, 0, n - m - 1);
-  // //反转后面部分
-  // reverse(arr, n - m, n - 1);
-  // //整体反转
-  // reverse(arr, 0, n - 1);
-  reverse(arr, arr + (n - m));
-  reverse(arr + (n - m), arr + n);
+  //整体反转
   reverse(arr, arr + n);
+  //反转前m部分
+  reverse(arr, arr + m);
+  //反转后面部分
+  reverse(arr + m, arr + n);
+
+  //左移m位 前m 后n-m 整体
   printf("%d", arr[0]);
   for (int i = 1; i < n; i++)
   {

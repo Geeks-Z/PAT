@@ -1,10 +1,10 @@
 /*
- * @moralityScorescripttion: 
+ * @Descripttion: 德才论
  * @version: 1.0
  * @Author: Geeks_Z
  * @Date: 2021-04-23 11:18:38
  * @LastEditors: Geeks_Z
- * @LastEditTime: 2021-04-23 17:20:41
+ * @LastEditTime: 2021-05-07 15:39:25
  */
 #include <stdio.h>
 #include <vector>
