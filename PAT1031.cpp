@@ -1,10 +1,10 @@
 /*
- * @Descripttion: 
+ * @Descripttion: 查验身份证
  * @version: 1.0
  * @Author: Geeks_Z
  * @Date: 2021-04-28 21:06:36
  * @LastEditors: Geeks_Z
- * @LastEditTime: 2021-04-28 21:29:16
+ * @LastEditTime: 2021-05-08 09:37:43
  */
 #include <cstdio>
 #include <iostream>

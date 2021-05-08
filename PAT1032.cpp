@@ -1,10 +1,10 @@
 /*
- * @Descripttion: 
+ * @Descripttion: 挖掘技术哪家强
  * @version: 1.0
  * @Author: Geeks_Z
  * @Date: 2021-04-28 21:36:27
  * @LastEditors: Geeks_Z
- * @LastEditTime: 2021-04-28 21:36:36
+ * @LastEditTime: 2021-05-08 09:41:20
  */
 #include <stdio.h>
 const int len = 100010;
