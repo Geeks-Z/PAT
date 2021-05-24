@@ -4,7 +4,7 @@
  * @Author: Geeks_Z
  * @Date: 2021-04-22 20:12:35
  * @LastEditors: Geeks_Z
- * @LastEditTime: 2021-05-07 15:37:47
+ * @LastEditTime: 2021-05-24 09:43:21
  */
 
 /**
@@ -31,7 +31,7 @@ int main()
     scanf("%s", &str[i]);
   }
 
-  int strLen = strlen(str[0]) < strlen(str[1]) ? strlen(str[0]) : strlen(str[0]);
+  int strLen = strlen(str[0]) < strlen(str[1]) ? strlen(str[0]) : strlen(str[1]);
   //寻找星期几--寻找第一个相同的大写字母
   while (index < strLen)
   {

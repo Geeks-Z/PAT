@@ -1,10 +1,10 @@
 /*
- * @Descripttion: 
+ * @Descripttion: 火星数字--参考https://www.liuchuo.net/archives/581
  * @version: 1.0
  * @Author: Geeks_Z
  * @Date: 2021-05-01 08:35:43
  * @LastEditors: Geeks_Z
- * @LastEditTime: 2021-05-01 09:47:02
+ * @LastEditTime: 2021-05-08 20:32:42
  */
 #include <cstdio>
 #include <iostream>

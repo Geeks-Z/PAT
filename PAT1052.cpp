@@ -4,7 +4,7 @@
  * @Author: Geeks_Z
  * @Date: 2021-05-01 17:24:44
  * @LastEditors: Geeks_Z
- * @LastEditTime: 2021-05-01 17:53:10
+ * @LastEditTime: 2021-05-24 16:30:24
  */
 #include <cstdio>
 #include <iostream>
@@ -14,7 +14,7 @@ using namespace std;
 
 int main()
 {
-  // freopen("input.txt", "r", stdin);
+  freopen("input.txt", "r", stdin);
   string str;
   vector<vector<string>> vi;
   for (int i = 0; i < 3; i++)
